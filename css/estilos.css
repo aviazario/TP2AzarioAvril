@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.contenedor {
+    width: 175px;
+    height: 50px;
+    border-radius: 10px;
+    
+}
+
+.circulo {
+
+
+width: 30px;
+height: 30px;
+border:1px dotted rgb(255, 255, 255);
+transform: translateX(0px) rotate(0deg);
+border-radius: 15px;
+transition: all 5s;
+
+}
+
+.contenedor:hover .circulo  {
+
+    transform: translateX(150px) rotate(360deg);
+    border-radius: 50%;
+}
+
+
+p:hover + .contenedor .circulo {
+
+transform: scale(0.5);
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 10px;
+}
+
+.mostrar {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #272b69;
+    left: 0;
+    top: 16vh;
+    padding: 2vw;
+    width: 100vw;
+}
+
+
+nav {
+    color: white;
+    width: 100vw;
+    height: 16vh;
+    background-color: #272b69;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+nav div {
+
+    display: flex;
+    width: 24.11%;
+    justify-content: space-between;
+
+}
+
+nav,
+header,
+main {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 50vh;
+    margin-bottom: 50px;
+
+
+}
+
+
+.lightboxOverlay {
+    background-color: gray;
+
+
+}
+
+section div {
+    width: 45.83%;
+}
+
+section div img,
+video {
+    width: 80%;
+}
+
+video
+{
+    width: 40%;
+}
+
+
+header {
+    height: 43vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    margin: 0;
+
+    font-size: 40px;
+
+    font-family: 'Oswald';
+}
+
+
+h1,
+header h3,
+nav a,
+header a {
+    line-height: 180%;
+}
+
+
+header h1 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size: 50px;
+
+}
+
+h4 {
+
+    color: #272b69;
+    font-size: 15px;
+
+}
+
+header p {
+    font-size: 16px;
+}
+
+
+header a,
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+nav span {
+    display: none;
+}
+
+
+.icon-menu::before {
+
+    color: white;
+    font-size: 4vw;
+
+
+}
+
+span.icon-menu:hover {
+    cursor: pointer;
+
+ }
+
+
+@media(max-width: 1200px) {
+
+    nav div {
+        width: 50%;
+    }
+
+
+    main section {
+
+
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    section {
+
+        height: auto;
+
+    }
+
+    section div {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    nav div {
+        display: none;
+    }
+
+    nav span {
+        display: inline;
+    }
+
+}
+
+.contenedor {
+
+
+    width: 180px;
+    height: 60px;
+    animation-name: miMovimiento; 
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+
+    
+    }
+    
+    
+    @keyframes miMovimiento{
+    
+    
+    from { background-color: rgb(26, 0, 128);}
+    
+    to { background-color: rgb(226, 43, 46);}
+    
+    
+    
+    }
+
+
+   
